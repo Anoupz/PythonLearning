@@ -8,3 +8,9 @@ for name, hero, universe in zip(names, heros, universes):
 # You can unpack the same using zip function
 for value in zip(names, heros, universes):
     print(value)  # this prints in tuple format
+
+
+# Dictionary comprehensions.
+
+my_dict = {name: hero for name, hero in zip(names, heros)}
+print("Dictionary comprehensions.", my_dict)
