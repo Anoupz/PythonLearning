@@ -10,7 +10,7 @@ ant_weight = 0.1
 
 i = 1
 while i <= 10:
-    print('Aditi')
+    print("Test1")
     i += 1
 
 for i in range(4):

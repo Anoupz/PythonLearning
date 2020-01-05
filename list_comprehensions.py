@@ -1,7 +1,7 @@
 """
   List Comprehensions
 """
-NAMES = ["Anoop", "Akila", "Aditi"]
+NAMES = ["Test1", "Test2", "Test3"]
 
 print([person for person in NAMES])
 

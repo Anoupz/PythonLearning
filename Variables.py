@@ -40,7 +40,7 @@ arr1 = [1, 2, 3, 4]
 
 print(arr1[1])
 
-names = ["Anoop", "Akila", "Aditi"]
+names = ["Test1", "Test2", "Test3"]
 names.append("baby")
 names.insert(0, "Family")
 names.insert(1, "Father")
@@ -63,8 +63,8 @@ print(problems.split(", "))
 t: tuple = (1, 2, 3)
 print(t[0])
 
-person1 = ("Anoop", 34, "Pizza")
-person2 = ("Akila", 32, "Pizza")
+person1 = ("Test1", 34, "Pizza")
+person2 = ("Test2", 32, "Pizza")
 name, age, fav_food = person1
 
 print(name, age, fav_food)
