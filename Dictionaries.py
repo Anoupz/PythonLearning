@@ -20,5 +20,3 @@ print(numbers)
 
 for key, value in contacts.items():
     print(key, "=", value)
-
-print("Test1" "test2")

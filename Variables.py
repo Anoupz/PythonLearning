@@ -1,18 +1,19 @@
 # Variables with dataTypes
 
-import turtle
+# import turtle
 
-my_turtle = turtle.Turtle()
+# my_turtle = turtle.Turtle()
 
 
 def square() -> None:
-    my_turtle.forward(100)
-    my_turtle.right(90)
-    my_turtle.forward(100)
-    my_turtle.right(90)
-    my_turtle.forward(100)
-    my_turtle.right(90)
-    my_turtle.forward(100)
+    pass
+    # my_turtle.forward(100)
+    # my_turtle.right(90)
+    # my_turtle.forward(100)
+    # my_turtle.right(90)
+    # my_turtle.forward(100)
+    # my_turtle.right(90)
+    # my_turtle.forward(100)
 
 
 # Date Types
@@ -76,3 +77,14 @@ for name, age, fav_food in persons:
     print(age)
     print(fav_food)
     print()
+
+
+a = [1, 2, 3]
+b = a
+c = list(a)
+
+print("a == b will be true", a == b)
+print("a is b will be true", a is b)
+print("a == c will be true", a == c)
+print("a is c this will be false", a is c)
+
