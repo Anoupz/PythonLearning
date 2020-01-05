@@ -1,4 +1,4 @@
-from Classes import Vehicle
+from python_classes import Vehicle, Employee
 
 
 class Honda(Vehicle):
@@ -44,3 +44,15 @@ large_truck.start()
 print("Is my truck fuel efficient ?? ", large_truck.is_fuel_efficient())
 large_truck.make_model = "Honda-CRV"
 print(large_truck.make_model)
+
+
+class Developer(Employee):
+    def __init__(self, first, last, pay, prog_lang):
+        super().__init__(first, last, pay)
+        self.prog_lang = prog_lang
+
+
+dev_1 = Developer("Test4", "User4", 90090, "Python")
+print(dev_1.email)
+print(dev_1.prog_lang)
+
