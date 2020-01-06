@@ -6,8 +6,8 @@ from collections import OrderedDict
 
 
 class Cache:
-    def __init__(self, cache_length):
-        self.cache_length = cache_length
+    def __init__(self, cache_size):
+        self.cache_size = cache_size
         self.cache_dic = OrderedDict()
 
     # get the item
@@ -24,13 +24,13 @@ class Cache:
         """
           check if item exists and if so remove first and add it back to the result dict to make sure they are recently accessed.
         """
-        if key in self.cache_dic or len(self.cache_dic) >= self.cache_length:
+        if key in self.cache_dic or len(self.cache_dic) >= self.cache_size:
             self.cache_dic.popitem(last=False)
         self.cache_dic[key] = key
         return self.cache_dic
 
 
-lru_cache = Cache(3)
+lru_cache = Cache(cache_size=3)
 print(lru_cache.put(1))
 print(lru_cache.put(2))
 print(lru_cache.put(3))
