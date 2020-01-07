@@ -55,9 +55,7 @@ def e_sort(emp):
 
 sorted_employees_by_lambda = sorted(employees, key=lambda e: e.age)
 sorted_employees_by_fun = sorted(employees, key=e_sort, reverse=True)
-sorted_employees_by_attrgetter = sorted(
-    employees, key=attrgetter("name"), reverse=True
-)
+sorted_employees_by_attrgetter = sorted(employees, key=attrgetter("name"), reverse=True)
 
 print(sorted_employees_by_lambda)
 print(sorted_employees_by_fun)

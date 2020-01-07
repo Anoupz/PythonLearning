@@ -87,4 +87,3 @@ print("a == b will be true", a == b)
 print("a is b will be true", a is b)
 print("a == c will be true", a == c)
 print("a is c this will be false", a is c)
-

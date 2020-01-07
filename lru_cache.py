@@ -1,5 +1,5 @@
 """
-Implementation of LRU Cache
+    Implementation of LRU Cache
 """
 
 from collections import OrderedDict
@@ -7,13 +7,19 @@ from collections import OrderedDict
 
 class Cache:
     def __init__(self, cache_size):
+        """
+        The init method which takes in cache size
+        
+        Arguments:
+            cache_size {[type]} -- [description]
+        """
         self.cache_size = cache_size
         self.cache_dic = OrderedDict()
 
     # get the item
     def get(self, key):
         """
-          retrive the item from the dic. And if found since its recently been accessed re insert into the dict
+          retrieve the item from the dic. And if found since its recently been accessed re insert into the dict
         """
         item = self.cache_dic.get(key)
         if item is not None:
@@ -38,4 +44,3 @@ print(lru_cache.put(4))
 print(lru_cache.get(2))
 print(lru_cache.get(1))
 print(lru_cache.put(5))
-

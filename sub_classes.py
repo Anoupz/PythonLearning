@@ -55,4 +55,3 @@ class Developer(Employee):
 dev_1 = Developer("Test4", "User4", 90090, "Python")
 print(dev_1.email)
 print(dev_1.prog_lang)
-
